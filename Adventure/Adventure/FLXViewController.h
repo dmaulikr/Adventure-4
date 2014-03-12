@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FLXViewController : UIViewController
+@interface FLXViewController : UIViewController <UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *characterName;
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
 
 @end
