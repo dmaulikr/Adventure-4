@@ -296,7 +296,7 @@
                                     <segue destination="KVJ-5r-scL" kind="push" id="u7E-jM-xei"/>
                                 </connections>
                             </button>
-                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text=", as it turns out, really likes the taste of pizza box cardboard..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3cE-78-FCT">
+                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="really likes the taste of pizza box cardboard..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3cE-78-FCT">
                                 <rect key="frame" x="18" y="249" width="282" height="116"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -399,6 +399,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="JJh-wF-rs6"/>
+        <segue reference="u7E-jM-xei"/>
     </inferredMetricsTieBreakers>
 </document>
