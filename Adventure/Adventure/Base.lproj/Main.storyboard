@@ -47,7 +47,7 @@
                                     <segue destination="0uA-Xs-5Q8" kind="push" id="C1g-9H-XW9"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" text="Your last ending had Ryan ...." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B3Q-CZ-qw5">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B3Q-CZ-qw5">
                                 <rect key="frame" x="48" y="361" width="232" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
@@ -188,7 +188,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eMY-rr-ZxU" kind="unwind" identifier="Ryan gets married with four children. The end." unwindAction="unwindFromAdventureViewController:" id="9h7-WS-woi"/>
+                                    <segue destination="eMY-rr-ZxU" kind="unwind" identifier="gets married with four children. The end." unwindAction="unwindFromAdventureViewController:" id="9h7-WS-woi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -238,7 +238,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rkx-5x-F2S" kind="unwind" identifier="Ryan ends up on Reality TV show about people who.... The end." unwindAction="unwindFromAdventureViewController:" id="DDB-Ju-y3J"/>
+                                    <segue destination="rkx-5x-F2S" kind="unwind" identifier="ends up on Reality TV show about people who.... The end." unwindAction="unwindFromAdventureViewController:" id="DDB-Ju-y3J"/>
                                 </connections>
                             </button>
                         </subviews>

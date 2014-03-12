@@ -46,7 +46,7 @@
     
     
     NSLog(@"VC Source View %@", sender.identifier);
-    self.previousStoryEnding.text = [NSString stringWithFormat:@"Story ended with %@",sender.identifier];
+    self.previousStoryEnding.text = [NSString stringWithFormat:@"Story ended with %@ %@",self.characterName, sender.identifier];
     self.previousStoryEnding.alpha = 1.0f;
 
 }
