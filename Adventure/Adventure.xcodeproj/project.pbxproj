@@ -22,6 +22,7 @@
 		C379B16018CFA9E20092D112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C379B15E18CFA9E20092D112 /* InfoPlist.strings */; };
 		C379B16218CFA9E20092D112 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C379B16118CFA9E20092D112 /* AdventureTests.m */; };
 		C379B17018CFAC510092D112 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C379B16F18CFAC510092D112 /* CheckMate.framework */; };
+		C379B17318D066AE0092D112 /* FLXAdventureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C379B17218D066AE0092D112 /* FLXAdventureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		C379B15F18CFA9E20092D112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C379B16118CFA9E20092D112 /* AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventureTests.m; sourceTree = "<group>"; };
 		C379B16F18CFAC510092D112 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
+		C379B17118D066AE0092D112 /* FLXAdventureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLXAdventureViewController.h; sourceTree = "<group>"; };
+		C379B17218D066AE0092D112 /* FLXAdventureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXAdventureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				C379B14518CFA9E20092D112 /* FLXAppDelegate.h */,
 				C379B14618CFA9E20092D112 /* FLXAppDelegate.m */,
 				C379B14818CFA9E20092D112 /* Main.storyboard */,
+				C379B17118D066AE0092D112 /* FLXAdventureViewController.h */,
+				C379B17218D066AE0092D112 /* FLXAdventureViewController.m */,
 				C379B14B18CFA9E20092D112 /* FLXViewController.h */,
 				C379B14C18CFA9E20092D112 /* FLXViewController.m */,
 				C379B14E18CFA9E20092D112 /* Images.xcassets */,
@@ -256,6 +261,7 @@
 			files = (
 				C379B14318CFA9E20092D112 /* main.m in Sources */,
 				C379B14718CFA9E20092D112 /* FLXAppDelegate.m in Sources */,
+				C379B17318D066AE0092D112 /* FLXAdventureViewController.m in Sources */,
 				C379B14D18CFA9E20092D112 /* FLXViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +485,7 @@
 				C379B16718CFA9E20092D112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C379B16818CFA9E30092D112 /* Build configuration list for PBXNativeTarget "AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +494,7 @@
 				C379B16A18CFA9E30092D112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

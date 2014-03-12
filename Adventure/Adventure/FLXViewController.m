@@ -7,6 +7,7 @@
 //
 
 #import "FLXViewController.h"
+#import "FLXAdventureViewController.h"
 
 @interface FLXViewController ()
 
@@ -25,5 +26,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton*)sender   {
+    NSLog(@"Prepare for segue %@", sender.titleLabel.text);
+//    self.navigationItem.title=sender.titleLabel.text;
+    FLXAdventureViewController * vc = segue.destinationViewController;
+    vc.title=sender.titleLabel.text;
+}
+
+- (IBAction)unwindFromAdventureViewController:(UIStoryboardSegue*)sender {
+    NSLog(@"Rewind... %@", sender.identifier);
+}
+
 
 @end
