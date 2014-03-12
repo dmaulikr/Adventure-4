@@ -195,7 +195,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="329" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Ryan ends up on Reality TV show about people who.... The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-lS-w0B">
+                            <textView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Ryan ends up on Reality TV Show. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-lS-w0B">
                                 <rect key="frame" x="48" y="194" width="233" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
@@ -363,6 +363,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="u7E-jM-xei"/>
+        <segue reference="JJh-wF-rs6"/>
     </inferredMetricsTieBreakers>
 </document>
