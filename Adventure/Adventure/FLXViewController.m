@@ -35,6 +35,7 @@
 //    self.navigationItem.title=sender.titleLabel.text;
     FLXAdventureViewController * vc = segue.destinationViewController;
     vc.title=sender.titleLabel.text;
+    vc.characterName = self.characterName.text;
     
 }
 
