@@ -10,6 +10,7 @@
 
 @interface FLXViewController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *characterName;
+@property (strong, nonatomic) NSString *characterNameStr;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
 

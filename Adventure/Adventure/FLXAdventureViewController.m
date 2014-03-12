@@ -10,7 +10,7 @@
 
 @interface FLXAdventureViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextView *storyText;
+@property (strong, nonatomic) IBOutlet UITextView *storyText;
 @end
 
 @implementation FLXAdventureViewController
@@ -28,8 +28,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSLog(@"Story: %@ %@",self.characterName,self.storyText.text);
-    self.storyText.text = [NSString stringWithFormat:@"%@ %@", self.characterName, self.storyText.text];
+    NSLog(@"Story: %@ %@",self.characterNameStr,self.storyText.text);
+    self.storyText.text = [NSString stringWithFormat:@"%@ %@", self.characterNameStr, self.storyText.text];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,9 +42,8 @@
     NSLog(@"Adventure VC Prepare for segue %@", sender.titleLabel.text);
     FLXAdventureViewController * vc = segue.destinationViewController;
     vc.title=sender.titleLabel.text;
-    vc.characterName=self.characterName;
+    vc.characterNameStr=[NSString stringWithFormat:@"%@",self.characterNameStr];
     NSLog(@"Adventure VC Source View %@", [segue.sourceViewController title]);
     
 }
-
 @end

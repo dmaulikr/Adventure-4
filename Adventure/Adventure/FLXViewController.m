@@ -10,7 +10,7 @@
 #import "FLXAdventureViewController.h"
 
 @interface FLXViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *previousStoryEnding;
+@property (strong, nonatomic) IBOutlet UITextView *previousStoryEnding;
 @property (strong, nonatomic) IBOutlet UITextView *storyText;
 
 @end
@@ -35,7 +35,8 @@
 //    self.navigationItem.title=sender.titleLabel.text;
     FLXAdventureViewController * vc = segue.destinationViewController;
     vc.title=sender.titleLabel.text;
-    vc.characterName = self.characterName.text;
+    NSLog(@"Character: %@", [self.characterName text]);
+    vc.characterNameStr = self.characterName.text;
     
 }
 
@@ -46,14 +47,15 @@
     
     
     NSLog(@"VC Source View %@", sender.identifier);
-    self.previousStoryEnding.text = [NSString stringWithFormat:@"Story ended with %@ %@",self.characterName, sender.identifier];
+    self.previousStoryEnding.text = [NSString stringWithFormat:@"Story ended with %@ %@",self.characterNameStr, sender.identifier];
     self.previousStoryEnding.alpha = 1.0f;
 
 }
 
 
 - (IBAction)onCharacterNameEdit:(UITextField *)sender {
-    self.storyText.text=[NSString stringWithFormat:@"%@ wakes up in the Mobile Maker space surrounded by empty pizza boxes..",self.characterName.text];
+    self.characterNameStr=self.characterName.text;
+    self.storyText.text=[NSString stringWithFormat:@"%@ wakes up in the Mobile Maker space surrounded by empty pizza boxes..",self.characterNameStr];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FLXAdventureViewController : UIViewController
-@property (strong, nonatomic) NSString *characterName;
+@property (strong, nonatomic) NSString *characterNameStr;
 
 @end
