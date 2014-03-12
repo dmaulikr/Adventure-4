@@ -39,6 +39,8 @@
     NSLog(@"Adventure VC Prepare for segue %@", sender.titleLabel.text);
     FLXAdventureViewController * vc = segue.destinationViewController;
     vc.title=sender.titleLabel.text;
+    NSLog(@"Adventure VC Source View %@", [segue.sourceViewController title]);
+
 }
 
 @end

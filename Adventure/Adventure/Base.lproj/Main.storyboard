@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" text="Your last ending had Ryan ...." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B3Q-CZ-qw5">
-                                <rect key="frame" x="48" y="228" width="207" height="199"/>
+                                <rect key="frame" x="48" y="361" width="232" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -65,6 +65,9 @@
                     <navigationItem key="navigationItem" title="My Adventure" id="LJg-SC-MNI">
                         <barButtonItem key="backBarButtonItem" title="  " id="zax-q1-y4n"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="previousStoryEnding" destination="B3Q-CZ-qw5" id="4St-2E-YVU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,7 +99,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qn9-nJ-Gec" kind="push" id="d3w-Xn-N8H"/>
+                                    <segue destination="qn9-nJ-Gec" kind="push" identifier="Ryan Gets Married" id="d3w-Xn-N8H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcM-nR-vb5">
@@ -112,7 +115,7 @@
                                     <segue destination="KVJ-5r-scL" kind="push" id="JJh-wF-rs6"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan meets someone new from an online dating site." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IXR-rd-wnd">
+                            <textView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Ryan meets someone new from an online dating site." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IXR-rd-wnd">
                                 <rect key="frame" x="36" y="202" width="251" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
@@ -145,7 +148,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets married with four children. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-FJ-st8">
+                            <textView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Ryan gets married with four children. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-FJ-st8">
                                 <rect key="frame" x="44" y="222" width="233" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
@@ -161,7 +164,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eMY-rr-ZxU" kind="unwind" unwindAction="unwindFromAdventureViewController:" id="9h7-WS-woi"/>
+                                    <segue destination="eMY-rr-ZxU" kind="unwind" identifier="Ryan gets married with four children. The end." unwindAction="unwindFromAdventureViewController:" id="9h7-WS-woi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -192,7 +195,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="329" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan ends up on Reality TV show about people who.... The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-lS-w0B">
+                            <textView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Ryan ends up on Reality TV show about people who.... The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-lS-w0B">
                                 <rect key="frame" x="48" y="194" width="233" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
@@ -208,7 +211,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rkx-5x-F2S" kind="unwind" unwindAction="unwindFromAdventureViewController:" id="DDB-Ju-y3J"/>
+                                    <segue destination="rkx-5x-F2S" kind="unwind" identifier="Ryan ends up on Reality TV show about people who.... The end." unwindAction="unwindFromAdventureViewController:" id="DDB-Ju-y3J"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -263,8 +266,8 @@
                                     <segue destination="KVJ-5r-scL" kind="push" id="u7E-jM-xei"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Turns out, he really likes the taste of pizza box cardboard..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3cE-78-FCT">
-                                <rect key="frame" x="18" y="249" width="282" height="224"/>
+                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Turns out, he really likes the taste of pizza box cardboard..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3cE-78-FCT">
+                                <rect key="frame" x="18" y="249" width="282" height="116"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -296,7 +299,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="332" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets stomach pumped. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-zO-YlQ">
+                            <textView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Ryan gets stomach pumped. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-zO-YlQ">
                                 <rect key="frame" x="25" y="256" width="282" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -312,7 +315,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oMj-p0-fdR" kind="unwind" unwindAction="unwindFromAdventureViewController:" id="9FE-sX-uB1"/>
+                                    <segue destination="oMj-p0-fdR" kind="unwind" identifier="Ryan gets stomach pumped. The end." unwindAction="unwindFromAdventureViewController:" id="9FE-sX-uB1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -360,6 +363,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="JJh-wF-rs6"/>
+        <segue reference="u7E-jM-xei"/>
     </inferredMetricsTieBreakers>
 </document>

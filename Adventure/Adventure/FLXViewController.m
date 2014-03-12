@@ -10,6 +10,7 @@
 #import "FLXAdventureViewController.h"
 
 @interface FLXViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *previousStoryEnding;
 
 @end
 
@@ -28,14 +29,23 @@
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton*)sender   {
-    NSLog(@"Prepare for segue %@", sender.titleLabel.text);
+    NSLog(@"Prepare for segue %@", segue.sourceViewController);
 //    self.navigationItem.title=sender.titleLabel.text;
     FLXAdventureViewController * vc = segue.destinationViewController;
     vc.title=sender.titleLabel.text;
+    
 }
 
 - (IBAction)unwindFromAdventureViewController:(UIStoryboardSegue*)sender {
-    NSLog(@"Rewind... %@", sender.identifier);
+    NSLog(@"VC Rewind... %@", sender.identifier);
+
+//    FLXAdventureViewController * sc = [sender sourceViewController];
+    
+    
+    NSLog(@"VC Source View %@", sender.identifier);
+    self.previousStoryEnding.text = [NSString stringWithFormat:@"Story ended with %@",sender.identifier];
+    self.previousStoryEnding.alpha = 1.0f;
+
 }
 
 
