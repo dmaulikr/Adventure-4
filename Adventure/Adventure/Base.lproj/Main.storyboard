@@ -222,7 +222,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="329" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="ends up on Reality TV show. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-lS-w0B">
+                            <textView multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="ends up on a Reality TV show. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-lS-w0B">
                                 <rect key="frame" x="48" y="194" width="233" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
@@ -348,7 +348,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oMj-p0-fdR" kind="unwind" identifier="Ryan gets stomach pumped. The end." unwindAction="unwindFromAdventureViewController:" id="9FE-sX-uB1"/>
+                                    <segue destination="oMj-p0-fdR" kind="unwind" identifier="gets stomach pumped. The end." unwindAction="unwindFromAdventureViewController:" id="9FE-sX-uB1"/>
                                 </connections>
                             </button>
                         </subviews>
