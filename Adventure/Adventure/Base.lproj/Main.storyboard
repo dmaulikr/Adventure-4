@@ -54,11 +54,30 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vfJ-9o-Ixh">
-                                <rect key="frame" x="40" y="180" width="240" height="183"/>
+                                <rect key="frame" x="44" y="163" width="240" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ryan" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-N3-5pU">
+                                <rect key="frame" x="86" y="116" width="148" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="onCharacterNameEdit:" destination="vXZ-lx-hvc" eventType="editingChanged" id="ciD-qy-ilt"/>
+                                    <action selector="textFieldEditingDidEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="XjX-cI-SMc"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="VYC-Is-bW1"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of Character" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aip-Gj-PXa">
+                                <rect key="frame" x="76" y="94" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -66,7 +85,9 @@
                         <barButtonItem key="backBarButtonItem" title="  " id="zax-q1-y4n"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="characterName" destination="s4h-N3-5pU" id="Mei-Yr-Hae"/>
                         <outlet property="previousStoryEnding" destination="B3Q-CZ-qw5" id="4St-2E-YVU"/>
+                        <outlet property="storyText" destination="vfJ-9o-Ixh" id="3Xs-Xv-dxE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

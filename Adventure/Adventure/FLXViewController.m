@@ -11,6 +11,7 @@
 
 @interface FLXViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *previousStoryEnding;
+@property (strong, nonatomic) IBOutlet UITextView *storyText;
 
 @end
 
@@ -20,6 +21,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,6 +49,32 @@
     self.previousStoryEnding.alpha = 1.0f;
 
 }
+
+
+- (IBAction)onCharacterNameEdit:(UITextField *)sender {
+    self.storyText.text=[NSString stringWithFormat:@"%@ wakes up in the Mobile Maker space surrounded by empty pizza boxes..",self.characterName.text];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
+- (IBAction)textFieldEditingDidEnd:(UITextField*)textField {
+    [textField resignFirstResponder];
+    [self.view endEditing:YES];
+    NSLog(@"Editing Ended");
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [textField resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    
+    [textField resignFirstResponder];
+    return YES;
+}
+
 
 
 @end
