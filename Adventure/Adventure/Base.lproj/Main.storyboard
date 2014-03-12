@@ -7,7 +7,7 @@
         <!--View Controller - My Adventure-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="FLXViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" id="vXZ-lx-hvc" customClass="FLXViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nCJ-40-oTY"/>
                         <viewControllerLayoutGuide type="bottom" id="kuE-8A-fWa"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw4-dQ-WwS">
-                                <rect key="frame" x="20" y="503" width="280" height="38"/>
+                                <rect key="frame" x="20" y="500" width="280" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -70,16 +70,18 @@
                             <constraint firstItem="9AQ-vi-yVM" firstAttribute="centerX" secondItem="l71-u4-a9Q" secondAttribute="centerX" id="ygx-e9-n6Q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Adventure" id="LJg-SC-MNI"/>
+                    <navigationItem key="navigationItem" title="My Adventure" id="LJg-SC-MNI">
+                        <barButtonItem key="backBarButtonItem" title="  " id="zax-q1-y4n"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="-157"/>
+            <point key="canvasLocation" x="-269" y="-41"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Clear up boxes-->
         <scene sceneID="oj4-3S-1TY">
             <objects>
-                <viewController id="jyo-9l-zv3" sceneMemberID="viewController">
+                <viewController title="Clear up boxes" modalTransitionStyle="partialCurl" id="jyo-9l-zv3" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dUV-CA-040"/>
                         <viewControllerLayoutGuide type="bottom" id="HKN-QG-wZm"/>
@@ -87,15 +89,105 @@
                     <view key="view" contentMode="scaleToFill" id="DpO-nF-7cl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDB-yU-e7f">
+                                <rect key="frame" x="20" y="486" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Says I love you">
+                                    <color key="titleColor" red="0.97395595339999996" green="0.96808005470000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qn9-nJ-Gec" kind="push" id="d3w-Xn-N8H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcM-nR-vb5">
+                                <rect key="frame" x="20" y="440" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Says I really like you">
+                                    <color key="titleColor" red="0.97395595339999996" green="0.96808005470000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KVJ-5r-scL" kind="push" id="JJh-wF-rs6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aBf-Rt-aSJ"/>
+                    <navigationItem key="navigationItem" title="Clear up boxes" id="aBf-Rt-aSJ">
+                        <barButtonItem key="backBarButtonItem" title="  " id="UjG-RO-yd6"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmQ-Sz-d2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="-708"/>
+            <point key="canvasLocation" x="269" y="-592"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="c5Z-u8-JER">
+            <objects>
+                <viewController id="qn9-nJ-Gec" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KHm-bY-QZI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZRG-9c-ZB2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e6T-VO-VCq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crying-baby1" translatesAutoresizingMaskIntoConstraints="NO" id="19X-K9-mUX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets married with four children. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-FJ-st8">
+                                <rect key="frame" x="44" y="222" width="233" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ztS-tf-Fz1">
+                        <barButtonItem key="backBarButtonItem" title=" " id="K7N-9m-TqK"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0x-y7-toh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="-592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yts-AQ-SOY">
+            <objects>
+                <viewController id="KVJ-5r-scL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NuF-DI-lNa"/>
+                        <viewControllerLayoutGuide type="bottom" id="wNT-xc-9tX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GT8-eb-2rn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan ends up on Reality TV show about people who...." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-lS-w0B">
+                                <rect key="frame" x="44" y="117" width="233" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xLq-Kz-4d4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9L-8i-1wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1433" y="-94"/>
+        </scene>
+        <!--View Controller - Eat Boxes-->
         <scene sceneID="xaT-Q9-R04">
             <objects>
                 <viewController id="0uA-Xs-5Q8" sceneMemberID="viewController">
@@ -106,13 +198,76 @@
                     <view key="view" contentMode="scaleToFill" id="G7N-LQ-mgL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rC-kj-3Vx">
+                                <rect key="frame" x="20" y="501" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Gets very sick">
+                                    <color key="titleColor" red="0.97395595339999996" green="0.96808005470000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Hw-E8-6MW" kind="push" id="A8Q-JO-HMb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzV-8q-qOd">
+                                <rect key="frame" x="20" y="455" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Is hungry for more">
+                                    <color key="titleColor" red="0.97395595339999996" green="0.96808005470000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KVJ-5r-scL" kind="push" id="u7E-jM-xei"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SgV-Lg-eJ8"/>
+                    <navigationItem key="navigationItem" title="Eat Boxes" id="SgV-Lg-eJ8">
+                        <barButtonItem key="backBarButtonItem" title=" " id="7ma-py-l86"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AsK-wC-GS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="298"/>
+            <point key="canvasLocation" x="269" y="414"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JgV-fJ-Yt0">
+            <objects>
+                <viewController id="3Hw-E8-6MW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LCm-Ha-IqX"/>
+                        <viewControllerLayoutGuide type="bottom" id="qMA-Cv-yWp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fsc-lB-Gfb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctor-mask1" translatesAutoresizingMaskIntoConstraints="NO" id="H1v-LK-eLG">
+                                <rect key="frame" x="0.0" y="0.0" width="332" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets stomach pumped. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-zO-YlQ">
+                                <rect key="frame" x="25" y="256" width="282" height="224"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s5e-7K-u9W">
+                        <barButtonItem key="backBarButtonItem" title=" " id="PJs-fB-S4X"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsI-Q4-rKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d9o-Fu-yDZ">
@@ -130,15 +285,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRC-7N-y2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="-157"/>
+            <point key="canvasLocation" x="-688" y="-41"/>
         </scene>
     </scenes>
     <resources>
         <image name="PizzaBoxes" width="640" height="480"/>
+        <image name="crying-baby1" width="1733" height="1733"/>
+        <image name="doctor-mask1" width="975" height="1300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="u7E-jM-xei"/>
+    </inferredMetricsTieBreakers>
 </document>
